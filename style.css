@@ -1,0 +1,82 @@
+:root {
+      --bgc:#D9D9D9;
+      --main-bgc:#ffffff;
+      --red:red;
+      --green:green;
+      --border : black;
+}
+
+*{
+      margin: 0%;
+}
+
+body{
+
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--bgc);
+      
+}
+
+.main{
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--main-bgc);
+      padding: 0px 25px ;
+      height:300px;
+      border: 1px solid var(--border);
+      border-radius:10px ;
+}
+
+h2{
+      color: #c50c0c;
+      text-transform: capitalize;
+
+}
+
+.input{
+      display: flex;
+      gap: 5px;
+}
+
+.shift {
+      width: 45px;
+}
+
+.shift,
+.Word-input{
+      height: 20px;
+      border-radius:3px ;
+      padding:3px 4px ;
+}
+
+
+.input-group {
+      position: relative;
+}
+
+.input-group label {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: 0.3s;
+      pointer-events: none;
+}
+
+.input-group .shift label{
+      font-size: 13px;
+}
+
+.input-group input:focus+label ,
+.input-group input:not(:placeholder-shown)+label{
+      top: 0;
+      font-size: 12px;
+      background-color: var(--main-bgc);
+      padding: 0 5px;
+}
