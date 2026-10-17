@@ -51,7 +51,7 @@ h2{
 .shift,
 .Word-input{
       height: 20px;
-      border-radius:3px ;
+      border-radius:5px ;
       padding:3px 4px ;
 }
 
@@ -79,4 +79,34 @@ h2{
       font-size: 12px;
       background-color: var(--main-bgc);
       padding: 0 5px;
+}
+
+.btn{
+      display: flex;
+      justify-content: space-around;
+      gap:20px;
+}
+
+.green,
+.red{
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      text-transform: capitalize;
+      font-weight: bold;
+      transition: all ease 0.3s;
+}
+
+.green:hover,
+.red:hover{
+      scale: 1.1;
+      
+}
+
+.green{
+      background-color: var(--green);
+}
+
+.red{
+      background-color: var(--red);
 }
